@@ -15,8 +15,8 @@ Se logra crear una comunicación de los servicios atravez de postman, permitiend
 ### **5. Descripción técnica de la solución implementada**
 Para los servicios de python se usaron las librerias: grpcio y grpcio-tools con las cuales con el comando " $ sudo python3 -m grpc_tools.protoc -I ../protobufs --python_out=. --pyi_out=. --grpc_python_out=. ../protobufs/Service.proto" crean las interfaces necesarias para la comunicación gRP, pero antes de esto se debia crear un archivo .proto que maneje los diferentes llamados a los metodos. En Node tambien debe existir el .proto pero en este caso en vez de instalar python y las librerias grpcio y grpcio-tools se instala es Node.js v19.X 
 ### **6. Guía de uso (En local)**
-Para implementar el trabajo primero se tendra que acceder a los archivos de este, por lo tanto se duplicara el repositorio donde estan con el comando "git clone https://github.com/andresecheverrijaramillo/microservicios.git", ya cuando se tengan los archivos clonados se procedera a abrir tres terminales diferentes, una por cada servicio, y se ejecutaran los archivos server.py o server.js dependiendo del servicio, cabe aclarar que se necesitara tener python con las librerias grpcio y grpcio-tools, y Node.js v19.X para que se puedan ejecutar. Si no se tienen instalados se correran los siguientes comandos.
-Python:
+Para implementar el trabajo primero se tendra que acceder a los archivos de este, por lo tanto se duplicara el repositorio donde estan con el comando "git clone https://github.com/andresecheverrijaramillo/microservicios.git", ya cuando se tengan los archivos clonados se procedera a abrir tres terminales diferentes, una por cada servicio, y se ejecutaran los archivos server.py o server.js dependiendo del servicio, cabe aclarar que se necesitara tener python con las librerias grpcio y grpcio-tools, y Node.js v19.X para que se puedan ejecutar. Si no se tienen instalados se correran los siguientes comandos. /n
+Python: /n
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install python3
