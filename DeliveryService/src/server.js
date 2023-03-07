@@ -21,10 +21,10 @@ server.addService(proto.DeliveryService.service, {
   });
 
 server.bindAsync(
-    ":::8082",
+    "172.31.59.172:8082",
     grpc.ServerCredentials.createInsecure(),
     (error, port) => {
-      console.log("Server running at :::8082");
+      console.log("Server running at 172.31.59.172:8082");
       server.start();
     }
   );
