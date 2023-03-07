@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Inventory{
+    repeated int32 Inventory = 8;
+}
+
+message Request{
+}
+
+service InventoryService {
+    rpc GetInventory(Request) returns (Inventory){}
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message Product{
+    int32 id_product = 1;
+}
+
+message TransactionResponse{
+    int32 status_code = 1;
+}
+
+message ProductList{
+    repeated int32 product_ids = 8;
+}
+
+service ProductService{
+    rpc AddProduct(Product) returns (TransactionResponse) {}
+    rpc DeleteProduct(Product) returns (TransactionResponse) {}
+    rpc BuyProducts(ProductList) returns (TransactionResponse) {}
+}
